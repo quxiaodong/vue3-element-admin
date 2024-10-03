@@ -1,1 +1,25 @@
 @import './tailwind.css';
+@import 'nprogress/nprogress.css';
+@import 'element-plus/dist/index.css';
+@import 'element-plus/theme-chalk/dark/css-vars.css';
+
+::view-transition-new(root),
+::view-transition-old(root) {
+  animation: none;
+}
+
+.page-bg {
+  @apply bg-gray-50 dark:bg-[#1a1a1a];
+}
+
+.page-container {
+  @apply bg-white dark:bg-[#121212];
+}
+
+.dropdown-item-active {
+  @apply bg-gray-100 dark:bg-black;
+}
+
+.el-tooltip__trigger:focus-visible {
+  outline: unset;
+}
