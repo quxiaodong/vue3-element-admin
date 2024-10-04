@@ -4,6 +4,14 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     {
+      path: '/',
+      meta: {
+        breadcrumb: '首页',
+        i18n: 'common:menu.home'
+      },
+      component: () => import('@/components/common-layout/Index.vue')
+    },
+    {
       path: '/sign-up',
       component: () => import('@/views/sign/Index.vue'),
       children: [
