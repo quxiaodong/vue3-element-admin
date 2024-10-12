@@ -1,6 +1,7 @@
 import CommonColorSchema from '@/components/common-color-scheme/Index.vue'
 import CommonDialog from '@/components/common-dialog/Index.vue'
 import CommonLocale from '@/components/common-locale/Index.vue'
+import CommonSearch from '@/components/common-search/Index.vue'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import ElementPlus from 'element-plus'
 import { createPinia } from 'pinia'
@@ -21,4 +22,5 @@ Object.values(plugins).forEach(plugin => app.use(plugin))
 app.component('CommonColorSchema', CommonColorSchema)
 app.component('CommonLocale', CommonLocale)
 app.component('CommonDialog', CommonDialog)
+app.component('CommonSearch', CommonSearch)
 app.mount('#app')
