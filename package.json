@@ -7,6 +7,9 @@
     "prepare": "husky",
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
+    "build:dev": "vue-tsc -b && vite build --mode development",
+    "dev:mock": "vite --mode mock",
+    "build:mock": "vue-tsc -b && vite build --mode mock",
     "preview": "vite preview"
   },
   "lint-staged": {
