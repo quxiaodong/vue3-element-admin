@@ -1,0 +1,1 @@
+import{c as t}from"./index-DdNsfEpz.js";const r=()=>t(s=>({url:"/sign-in",method:"post",data:s})),o=()=>t(()=>({url:"/sign-out",method:"get"})),e=()=>t(s=>({url:"/sign-up",method:"post",data:s}));export{e as a,r as b,o as s};
